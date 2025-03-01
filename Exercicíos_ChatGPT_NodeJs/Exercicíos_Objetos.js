@@ -63,3 +63,52 @@ function encontrarProdutoPeloNome (obj, propriedade){
     return produtoSelecionado
 }
 console.log(encontrarProdutoPeloNome(carros,"Fit"))
+
+
+
+
+
+const sociedade = [
+    {nome: "Caio", idade: 19},
+    {nome: "Daniel", idade: 9},
+    {nome: "Fabio", idade: 10},
+    {nome: "Andressa", idade: 20},
+]
+
+function filtrarIdade(arrayObj, chave){
+    const arrayMaiorIdade = arrayObj.filter((lista) =>{ return lista[chave] >= 18})
+    return arrayMaiorIdade;
+}
+
+console.log(filtrarIdade(sociedade,"idade"))
+
+
+
+
+const produtos2 = [
+    { nome: "Notebook", preco: 2500 },
+    { nome: "Mouse", preco: 150 },
+    { nome: "Teclado", preco: 350 }
+  ];
+  
+function somarPreços(arrayObj){
+    return arrayObj.reduce((total,produto) => total + produto.preco, 0);
+}
+console.log(somarPreços(produtos2))
+
+
+
+
+
+const produtosMercenaria = [
+    { nome: "Cadeira", preco: 450 },
+    { nome: "Mesa", preco: 1200 },
+    { nome: "Lâmpada", preco: 50 }
+  ];
+  
+  function ordenarPreçosProdutos(arrayobj,nomeChave){
+    const valoresOrdenados = arrayobj.sort((a,b) => a[nomeChave] - b[nomeChave])
+    return valoresOrdenados
+  }
+  
+  console.log(ordenarPreçosProdutos(produtosMercenaria,"preco"))
