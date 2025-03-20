@@ -21,5 +21,7 @@ function dobrarValores([...array]){
 console.log(dobrarValores([10, 22, 43])); 
 
 
+const numerosGenericos = [10,20,30,40,50]
 
-  
+const numerosDobrados = numerosGenericos.map((numeros) => {return numeros * 2})
+console.log(numerosDobrados)
