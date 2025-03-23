@@ -34,5 +34,4 @@ function filtrarValor(obj) {
   });
   return dadosFiltrados;
 }
-
 console.log(filtrarValor(produtos));
