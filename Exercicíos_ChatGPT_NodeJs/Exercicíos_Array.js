@@ -25,3 +25,29 @@ const numerosGenericos = [10,20,30,40,50]
 
 const numerosDobrados = numerosGenericos.map((numeros) => {return numeros * 2})
 console.log(numerosDobrados)
+
+
+
+const numerosGenericos2 = [10,20,30,40,50]
+
+function somaArray(arrayObj){
+    const numeroSomado = arrayObj.reduce((acumulador, numeros) => acumulador + numeros,0)
+    return numeroSomado
+}
+console.log(somaArray(numerosGenericos2))
+
+const informaçãoUsuario = []
+
+function addInfo(nome, email, idade){
+    const usuario = {
+        nome_Usuario: nome,
+        Email_Usuario: email,
+        idade_Usuario: idade
+    }
+    informaçãoUsuario.push(usuario)
+}
+addInfo("Caio Henrique Arruda Moreira", "caiohamoreira@gmail.com", 19)
+addInfo("Adressa Cristina Silva Arruda", "acsarruda13@gmail.com", 20)
+console.log(informaçãoUsuario)
+
+

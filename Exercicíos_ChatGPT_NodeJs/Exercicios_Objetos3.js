@@ -35,3 +35,34 @@ function filtrarValor(obj) {
   return dadosFiltrados;
 }
 console.log(filtrarValor(produtos));
+
+const pessoas = [
+  { nome: "Ana", idade: 17 },
+  { nome: "Carlos", idade: 20 },
+  { nome: "Maria", idade: 16 },
+  { nome: "Pedro", idade: 25 }
+];
+
+function filtrarPorIdade(arrayOBJ){
+  const filtrados = arrayOBJ.filter((usuarios) => {
+      if(usuarios["idade"] >= 18){
+          return usuarios
+      }else{
+          return null
+      }
+  })
+  return filtrados
+}
+console.log(filtrarPorIdade(pessoas))
+
+const produtosEletronicos = [
+  { nome: "Celular", preco: 1500 },
+  { nome: "Notebook", preco: 3000 },
+  { nome: "Fone de Ouvido", preco: 200 }
+];
+
+function ordenadoCrescente(obj){
+  const attCrescente = obj.sort((a,b) => a["preco"] - b["preco"])
+  return attCrescente
+}
+console.log(ordenadoCrescente(produtosEletronicos))
